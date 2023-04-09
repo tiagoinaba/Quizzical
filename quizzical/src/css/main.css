@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #293264;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  background-color: #4D5B9E;
+  color: #F5F7FB;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.start {
+  text-align: center;
+}
+.start__heading {
+  font-family: "Karla";
+  font-size: 3.2rem;
+  margin-bottom: 1.1rem;
+}
+.start__description {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 2.9rem;
+}
+.start__btn {
+  padding: 1.6rem 5.9rem;
+}
+
+.blobs,
+.blob5 {
+  position: absolute;
+  z-index: -1;
+}
+
+.blob5 {
+  inset: 0 0 auto auto;
+  transform: translate(25%, -25%);
+}
+
+.blobs {
+  inset: auto auto 0 0;
+  transform: translate(-25%, 25%);
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+}
+.quiz .question__heading {
+  font-size: 1.6rem;
+}
+.quiz .question__alternative {
+  border: 1px solid #4D5B9E;
+  font-family: "Inter";
+  color: inherit;
+  background-color: transparent;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-top: 1.2rem;
+  padding: 0.4rem 2.1rem;
+  cursor: pointer;
+}
+.quiz .question__alternative:not(:last-child) {
+  margin-right: 1.2rem;
+}
+.quiz .question__alternative--selected {
+  border: 1px solid #D6DBF5;
+  background-color: #D6DBF5;
+}
+.quiz .question__alternative--correct {
+  background-color: #94D7A2;
+  border: none;
+}
+.quiz .question__alternative--incorrect {
+  background-color: #F8BCBC;
+  border: none;
+}
+.quiz .question hr {
+  margin: 1.5rem 0;
+  border: none;
+  border-top: 1px solid #DBDEF0;
+}
+.quiz .bottom-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.quiz .bottom-container .check-btn {
+  padding: 1rem 2.1rem;
+  align-self: center;
+  display: inline-block;
+}
+.quiz .bottom-container .score {
+  display: inline-block;
+  font-weight: 700;
+  margin-right: 1.9rem;
+  font-size: 1.2rem;
+}
+
+.transparent {
+  opacity: 60%;
+}/*# sourceMappingURL=main.css.map */
